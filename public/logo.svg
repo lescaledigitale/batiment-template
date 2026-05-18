@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none" role="img" aria-label="Logo [Nom de votre Entreprise]">
+  <!-- Icône bâtiment stylisé -->
+  <g transform="translate(0, 4)">
+    <!-- Toit -->
+    <polygon points="22,0 44,14 0,14" fill="#E8730A"/>
+    <!-- Corps du bâtiment -->
+    <rect x="4" y="14" width="36" height="30" fill="#1C2B4A"/>
+    <!-- Fenêtres -->
+    <rect x="8"  y="18" width="8"  height="8" fill="#E8730A" opacity="0.8" rx="1"/>
+    <rect x="20" y="18" width="8"  height="8" fill="#E8730A" opacity="0.8" rx="1"/>
+    <rect x="32" y="18" width="8"  height="8" fill="#E8730A" opacity="0.8" rx="1"/>
+    <!-- Porte -->
+    <rect x="16" y="30" width="12" height="14" fill="#E8730A" rx="1"/>
+    <!-- Accent ligne -->
+    <rect x="0" y="14" width="44" height="2" fill="#F5A623"/>
+  </g>
+
+  <!-- Texte principal -->
+  <text
+    x="54"
+    y="28"
+    font-family="Montserrat, 'Segoe UI', system-ui, sans-serif"
+    font-size="18"
+    font-weight="800"
+    fill="#1C2B4A"
+    letter-spacing="-0.3"
+  >[VOTRE</text>
+  <text
+    x="54"
+    y="46"
+    font-family="Montserrat, 'Segoe UI', system-ui, sans-serif"
+    font-size="18"
+    font-weight="800"
+    fill="#E8730A"
+    letter-spacing="-0.3"
+  >ENTREPRISE]</text>
+
+  <!-- Séparateur vertical -->
+  <rect x="162" y="8" width="1.5" height="36" fill="#E5E7EB"/>
+
+  <!-- Sous-texte -->
+  <text
+    x="170"
+    y="24"
+    font-family="Montserrat, 'Segoe UI', system-ui, sans-serif"
+    font-size="7.5"
+    font-weight="700"
+    fill="#6B7280"
+    letter-spacing="1.2"
+  >RÉNOVATION</text>
+  <text
+    x="170"
+    y="35"
+    font-family="Montserrat, 'Segoe UI', system-ui, sans-serif"
+    font-size="7.5"
+    font-weight="700"
+    fill="#6B7280"
+    letter-spacing="1.2"
+  >&amp; MAÇONNERIE</text>
+</svg>
