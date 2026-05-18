@@ -96,6 +96,11 @@ export default function Footer() {
             ))}
           </nav>
         </div>
+        <div className="container" style={{ paddingTop: '0.75rem', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.25)' }}>
+            Bâti avec 🧱 par <a href="https://lescaledigitale.fr" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', transition: 'color 150ms' }} className="footer-link">L&apos;Escale Digitale</a>
+          </p>
+        </div>
       </div>
 
       <style>{`
