@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+
 const steps = [
   {
     num: '01', title: 'Analyse & Devis',
@@ -35,9 +37,8 @@ export default function Process() {
 
         <div style={{ display: 'flex', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }} className="process-row">
           {steps.map((step, i) => (
-            <>
+            <Fragment key={step.num}>
               <div
-                key={step.num}
                 style={{ flex: 1, textAlign: 'center', padding: '2rem 1.25rem', minWidth: '180px' }}
                 className="process-step"
               >
@@ -68,13 +69,13 @@ export default function Process() {
                 </p>
               </div>
               {i < steps.length - 1 && (
-                <div key={`connector-${i}`} className="process-connector" style={{
+                <div className="process-connector" style={{
                   width: '48px', height: '2px', flexShrink: 0, marginTop: '5.5rem',
                   background: 'linear-gradient(to right, var(--color-primary), var(--color-accent))',
                   borderRadius: '2px',
                 }} />
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

@@ -326,7 +326,7 @@ export default function Presentation() {
             <span className="section-label" style={{ color: 'var(--color-accent)' }}>Nos atouts &amp; réalisations</span>
             <h2 className="section-title section-title--light" id="whyus-title" style={{ color: 'var(--color-white)' }}>
               {/* À PERSONNALISER */}
-              Pourquoi nous choisir &amp; nos réalisations
+              Pourquoi nous choisir ?
             </h2>
           </div>
 

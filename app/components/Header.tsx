@@ -137,7 +137,7 @@ export default function Header() {
           onClick={(e) => scrollTo(e, '#contact')}
           className="btn btn-primary btn-sm desktop-cta"
         >
-          Contact {/* À PERSONNALISER — ex: "Nous contacter", "Devis gratuit", etc. */}
+          Contactez-nous {/* À PERSONNALISER — ex: "Nous contacter", "Devis gratuit", etc. */}
         </a>
 
         {/* Burger */}
