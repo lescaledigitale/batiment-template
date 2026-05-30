@@ -12,7 +12,6 @@ const navItems = [
   },
   { label: 'Compétences', href: '#competences' },
   { label: 'Réalisations', href: '#realisations' }, // Pointe vers la galerie fusionnée dans la section Présentation
-  { label: 'Contact', href: '#contact' },
 ]
 
 export default function Header() {
