@@ -71,7 +71,7 @@ export default function Hero() {
           intérieure et extérieure — de la maison individuelle aux locaux professionnels.
         </p>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>{/* gap: 2rem = 32px pour équilibre visuel entre les deux CTAs */}
           <a href="#devis" className="btn btn-primary btn-lg">Demander un devis gratuit</a>
           <a href="#services" className="btn btn-outline-white btn-lg">Nos expertises</a>
         </div>

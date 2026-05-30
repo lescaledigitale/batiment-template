@@ -11,11 +11,13 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <a href="#accueil" aria-label="[Nom de votre Entreprise] — Accueil">
-              <Image src="/logo.svg" alt="Logo [Nom de votre Entreprise]" width={160} height={42} style={{ height: '42px', width: 'auto' }} />
+            {/* À PERSONNALISER — remplacer le logo */}
+            <a href="#accueil" aria-label="[NOM_ENTREPRISE] — Accueil">
+              <Image src="/logo.svg" alt="Logo [NOM_ENTREPRISE]" width={160} height={42} style={{ height: '42px', width: 'auto' }} />
             </a>
+            {/* À PERSONNALISER — tagline entreprise */}
             <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBlock: '1.25rem', maxWidth: '300px' }}>
-              [Nom de votre Entreprise], votre expert en rénovation tous corps d&apos;état depuis plus de 25 ans. Qualité, transparence et savoir-faire artisanal au service de votre projet.
+              [NOM_ENTREPRISE], votre expert en rénovation tous corps d&apos;état depuis [ANNÉE_FONDATION]. Qualité, transparence et savoir-faire artisanal au service de votre projet.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem' }}>
               {[
@@ -64,18 +66,25 @@ export default function Footer() {
             </ul>
           </nav>
 
-          {/* Contact */}
+          {/* Contact — À PERSONNALISER */}
           <div>
             <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '0.875rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-white)', marginBottom: '1.25rem' }}>
               Contact
             </h3>
             <address style={{ fontStyle: 'normal', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.5rem' }}>
               <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
-                <strong style={{ color: 'rgba(255,255,255,0.8)' }}>[Nom de votre Entreprise]</strong><br />
-                [Votre Adresse]<br />[75000 Votre Ville]
+                {/* À PERSONNALISER — Raison sociale */}
+                <strong style={{ color: 'rgba(255,255,255,0.8)' }}>[NOM_ENTREPRISE]</strong><br />
+                {/* À PERSONNALISER — Adresse postale */}
+                [ADRESSE]<br />[CODE_POSTAL] [VILLE]
+                {/* À PERSONNALISER — SIRET (optionnel) */}
+                {/* <br />SIRET : [SIRET] */}
               </p>
-              <a href="tel:+33400000000" className="footer-link">📞 [04 XX XX XX XX]</a>
-              <a href="mailto:contact@votre-domaine.fr" className="footer-link">✉️ contact@votre-domaine.fr</a>
+              {/* À PERSONNALISER — Téléphone */}
+              <a href="tel:+33XXXXXXXXX" className="footer-link">📞 [TÉLÉPHONE]</a>
+              {/* À PERSONNALISER — Email */}
+              <a href="mailto:[EMAIL]" className="footer-link">✉️ [EMAIL]</a>
+              {/* À PERSONNALISER — Horaires d'ouverture */}
               <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)' }}>Lun – Ven : 8h00 – 18h00</span>
             </address>
             <a href="#devis" className="btn btn-primary btn-sm">Devis gratuit</a>
@@ -87,8 +96,9 @@ export default function Footer() {
       {/* Bottom */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingBlock: '1.5rem' }}>
         <div className="container footer-bottom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          {/* À PERSONNALISER — Nom légal */}
           <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.4)' }}>
-            © {year} <strong>[Nom de votre Entreprise]</strong> — Tous droits réservés.
+            © {year} <strong>[NOM_ENTREPRISE]</strong> — Tous droits réservés.
           </p>
           <nav aria-label="Liens légaux" style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
             {['Mentions légales', 'Politique de confidentialité', 'Plan du site'].map((l) => (

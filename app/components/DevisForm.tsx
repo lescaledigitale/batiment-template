@@ -33,7 +33,26 @@ export default function DevisForm() {
     setErrors(errs)
     if (Object.keys(errs).length) return
     setLoading(true)
+
+    // ──────────────────────────────────────────────────────────────
+    // CONFIGURER L'EMAIL DE RÉCEPTION ICI
+    // Remplacer le setTimeout ci-dessous par un appel fetch vers votre
+    // endpoint d'envoi de mail (ex: Resend, Formspree, Nodemailer…)
+    //
+    // Exemple avec Formspree :
+    //   fetch('https://formspree.io/f/[VOTRE_ID]', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(fields),
+    //   })
+    //
+    // Exemple avec votre propre API route Next.js :
+    //   fetch('/api/contact', { method: 'POST', body: JSON.stringify(fields) })
+    //   → Créer app/api/contact/route.ts avec nodemailer ou Resend
+    //   → EMAIL DE RÉCEPTION : '[EMAIL_RECEPTION]'  ← À PERSONNALISER
+    // ──────────────────────────────────────────────────────────────
     setTimeout(() => { setSent(true); setLoading(false); setFields(initFields) }, 1200)
+    // ↑ Remplacer ce setTimeout par un vrai appel API (voir commentaire ci-dessus)
   }
 
   const inputStyle = (hasErr: boolean) => ({
@@ -61,10 +80,11 @@ export default function DevisForm() {
           <p style={{ color: 'var(--color-text-muted)', marginBlock: '1.5rem', lineHeight: 1.8 }}>
             Remplissez le formulaire et notre équipe vous contactera rapidement pour établir un devis détaillé et personnalisé.
           </p>
+          {/* À PERSONNALISER — Coordonnées de contact */}
           {[
-            { icon: '📞', label: 'Appelez-nous',  val: '[04 XX XX XX XX]', href: 'tel:+33400000000' },
-            { icon: '✉️', label: 'Écrivez-nous',  val: 'contact@votre-domaine.fr', href: 'mailto:contact@votre-domaine.fr' },
-            { icon: '📍', label: 'Adresse',        val: '[Votre Adresse, 75000 Paris]', href: undefined },
+            { icon: '📞', label: 'Appelez-nous',  val: '[TÉLÉPHONE]',            href: 'tel:+33XXXXXXXXX' },           // À PERSONNALISER
+            { icon: '✉️', label: 'Écrivez-nous',  val: '[EMAIL]',                href: 'mailto:[EMAIL]' },             // À PERSONNALISER
+            { icon: '📍', label: 'Adresse',        val: '[ADRESSE], [VILLE]',    href: undefined },                    // À PERSONNALISER
           ].map((c) => (
             <div key={c.label} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.25rem' }}>
               <span style={{ fontSize: '1.25rem', flexShrink: 0, marginTop: '0.125rem' }}>{c.icon}</span>
@@ -84,6 +104,7 @@ export default function DevisForm() {
         <div style={{ backgroundColor: 'var(--color-white)', borderRadius: 'var(--radius-lg)', padding: 'clamp(1.5rem, 4vw, 2.5rem)', boxShadow: 'var(--shadow-lg)', border: '1px solid var(--color-border)' }}>
           {sent ? (
             <div style={{ padding: '2rem', textAlign: 'center', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid var(--color-success)', borderRadius: 'var(--radius-sm)', color: '#065F46', fontWeight: 600 }}>
+              {/* À PERSONNALISER — message de confirmation après envoi */}
               ✓ Votre message a bien été envoyé ! Nous vous répondrons sous 48h.
             </div>
           ) : (

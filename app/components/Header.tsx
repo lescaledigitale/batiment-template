@@ -11,7 +11,7 @@ const navItems = [
     dropdown: ['Rénovation Maison', 'Rénovation Appartement', 'Rénovation Salle de Bain'],
   },
   { label: 'Compétences', href: '#competences' },
-  { label: 'Réalisations', href: '#realisations' },
+  { label: 'Réalisations', href: '#realisations' }, // Pointe vers la galerie fusionnée dans la section Présentation
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -132,21 +132,13 @@ export default function Header() {
         </nav>
 
         {/* CTA desktop */}
+        {/* CTA principal — href pointe vers #contact */}
         <a
-          href="#devis"
-          onClick={(e) => scrollTo(e, '#devis')}
-          className="btn btn-primary btn-sm"
-          style={{ flexShrink: 0, display: 'none' }}
-          id="header-cta"
-        >
-          Demandez un devis
-        </a>
-        <a
-          href="#devis"
-          onClick={(e) => scrollTo(e, '#devis')}
+          href="#contact"
+          onClick={(e) => scrollTo(e, '#contact')}
           className="btn btn-primary btn-sm desktop-cta"
         >
-          Demandez un devis
+          Contact {/* À PERSONNALISER — ex: "Nous contacter", "Devis gratuit", etc. */}
         </a>
 
         {/* Burger */}
