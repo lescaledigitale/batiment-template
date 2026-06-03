@@ -248,7 +248,7 @@ export default function Presentation() {
             </h2>
             <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '600px', margin: '0 auto' }}>
               {/* À PERSONNALISER */}
-              Découvrez nos principaux domaines d&apos;intervention — ajoutez facilement de nouvelles cartes dans le fichier.
+              Découvrez nos principaux domaines d&apos;intervention et ajoutez facilement de nouvelles cartes dans le fichier.
             </p>
           </div>
 
